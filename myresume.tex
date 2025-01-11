@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Rohit Ghumare
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://devopsguys.in//}{\Large Chetan Shinde}} & Email :  \href{mailto:schetan97@yahoo.com}{schetan97@yahoo.com}\\
+  \href{https://www.linkedin.com/in/sbshark/}{LinkedIn |}
+  \href{https://medium.com/@sbshark/}{Medium |}
+  \href{https://github.com/sbshark/}{Github}& Mobile :  +(91)-9595585125 \\
+\end{tabular*}
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+		{NTT DATA}{Pune, India}
+      {Digital Engineering Sr. Engineer - Full time}{August 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Experience with Anypoint studio and Anypoint platform. Good understanding of Mule 4 and API design using RAML 1.0}
+        \resumeItem{}
+        {Experienced in Salesforce development tools like Flow designer, SOQL Queries, Triggers}
+		\resumeItem{}
+		{Implemented integration interfaces for transforming XML, JSON, CSV over HTTP/S, SFTP, Database connectors}
+\resumeItem{}
+		{Utilized different connectors, transformations, Routing, Messaging, and Exception handling using Mule ESB to ensure robust and loosely coupled integration layer}
+\resumeItem{}
+		{Hands-on experience in writing the Dataweave Language along with good understanding of XML, JSON, RAML, SQL, REST \& SOAP}
+\resumeItem{}
+		{Used several connectors like HTTP, File, Database, SQS, Salesforce, Netsuite, SFTP, SMTP Email, Gmail, Circuit breaker, Sharepoint, S3 bucket, Docusign and Quickbooks}
+\resumeItem{}
+		{Worked in Integration patterns - Request-Response, Pub-Sub etc}
+\resumeItem{}
+		{Worked with Mulesoft Composer, RPA automation}
+\resumeItem{}
+		{Worked in a Agile team methodology}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Inditronics Pvt. Ltd}{Pune, India}
+      {Android Developer Intern}{July 2016 - May 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed a Personal Assistant app which had Speech-to-Text based functionality based on which it could wake you up, create reminders, book a ticket for Cab, Train and even Bus}
+        \resumeItem{}
+          {Developed and Deployed multiple chatbots from scratch which helped to increase in user interactions with chat support}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+ \resumeSubItem{Accounting Seed |}
+      {Salesforce to Edenred full fledged Payments, client onboarding APIs were developed, Used API maps object to allow client to dynamically change mappings in mulesoft using dynamic evaluate, SQS queues are used in case of error reporting and listening to Salesforce/edenred webhook events}
+    \resumeSubItem{Authenticom |}
+      {Salesforce to Docusign and docusign to Salesforce integration APIs, Created platform events and flows in Salesforce, Additionally Quickbooks was synced with Line Item object in Salesforce and vice-versa}
+        \resumeSubItem{Allvision |}
+      {Worked on Scheduler based sync where sharepoint XLSX/CSV file was provided with more than 10000+ records and these records were then synced with their database, Worked on complex dataweave script as each row had to be subdivided into multiple subrows and the amount and views had to be adjusted accordingly}
+    \resumeSubItem{MadeInUSA |}
+      {Encryption Decryption API was created for the client to send client id and secret properties to already developed applications}
+		
+    \resumeSubItem{Logically |}
+      {Fix for retry and Circuit Breaker, Logs monitoring for identifying faults within the existing implementation}
+    \resumeSubItem{Bestpass |}
+      {ETT custom MS SQL database sync with Salesforce using scheduler sync, capabilities to notify support team of failure in a sync job, worked with 10000+ rows using Batch Jobs in a single transaction}
+    \resumeSubItem{Living Water Clinic |}
+      {Developed APIs to Sync patient data from Athena to Salesforce and vice versa using a scheduler based sync, SMTP email Notifications in case of error in syncing from/to Salesforce / Athena}
+ \resumeSubItem{ComplySci |}
+      {Salesforce Sync based on platform events to Netsuite and Netsuite webhooks based sync to Salesforce}
+ \resumeSubItem{Yamana Gold |}
+      {Worked on Gmail notifications using custom JAVA code and Database API where we used MySQL connector}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+ \resumeSubItem{}{
+     \textbf{Programming}{: Python, Java, JSON, HTML, CSS }
+     }
+ \resumeSubItem{}{
+     \textbf{Database}{: MySQL, SQL, MongoDB }
+     }
+ \resumeSubItem{}{
+     \textbf{Technologies}{: Mulesoft, AWS, Azure }
+    }
+ \resumeSubItem{}{
+     \textbf{Tools}{: DevOps Tools, Github, Jenkins, Jira, SOAP UI, Postman }
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NBN Sinhgad College of Engineering}{Pune, India}
+      {(B.E in Computer Engineering);  GPA: 7.84/10 }{2018 - 2021}
+    \resumeSubheading
+      {Maharashtra State Board of Technical Education}{Pune, India}
+      {(Diploma, Computer Engineering);  GPA: 7.31/10 }{2013 - 2018}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
